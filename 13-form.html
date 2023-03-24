@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <table>
+        <tr>
+          <td><label for="ep">Eposta</label></td>
+          <td>
+            <!-- required girilmesi zorunlu yapar -->
+            <input
+              required
+              type="email"
+              name="eposta"
+              id="ep"
+              placeholder="info@example.com"
+            />
+          </td>
+          <!-- Eposta ya tıklayınca input aktif olur kucuk ekranlar için  -->
+          <!-- ornek gostemek için placeholder kullanılır  -->
+        </tr>
+        <tr>
+          <td><label for="">Şifre</label></td>
+          <td>
+            <input minlength="3" maxlength="10" type="password" name="sifre" />
+          </td>
+          <!-- name tag ile backend te @requestParam kısmı oluyor  -->
+        </tr>
+        <tr>
+          <td><label for="guvenlik">Guvenlik kodu</label></td>
+          <td><input type="number" id="guvenlik" value="123" readonly /></td>
+          <!-- readonly içine yazı yazılmaz value de deger atama yapar -->
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit">Kaydet</button>
+            <!--disable buttonu pasif yapar kod ile dolunca aktif etme gibi kullanılır -->
+            <button type="reset">Temizle</button>
+            <!-- button kullanınıca simge eklmee yapılır +Kaydet gibi -->
+            <!-- button degilde submit olursa <value=> içinde yazılır karakter eklenmez-->
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

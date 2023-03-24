@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="post" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <label for="adi"> Adı</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="adi"
+                    id="adi"
+                    required
+                    minlength="2"
+                    maxlength="30"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="soyadi"> Soyadı</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="soyadi"
+                    id="soyadi"
+                    required
+                    minlength="2"
+                    maxlength="30"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Cinsiyeti</td>
+                <td>
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="erkek"
+                    required
+                    id="erkekc"
+                  />
+                  <label for="erkekc">Erkek</label>
+                  <input
+                    type="radio"
+                    name="gender"
+                    required
+                    value="kadin"
+                    id="kadınc"
+                  />
+                  <label for="kadınc">Kadın</label>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="ulke"> Ülke</label></td>
+                <td>
+                  <select name="country" id="ulke" required>
+                    <option value="" disabled selected>seçiniz</option>
+                    <option value="tr">Turkiye</option>
+                    <option value="usa">Germany</option>
+                    <option value="fr">France</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="eposta">Eposta</label>
+                </td>
+                <td>
+                  <input type="email" name="eposta" id="eposta" required />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="web">Kişisel Site</label>
+                </td>
+                <td><input type="url" name="web" id="web" /></td>
+              </tr>
+              <tr>
+                <td><label for="tel">Telefon</label></td>
+                <td><input type="tel" id="tel" name="telefon" /></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td>Hobiler</td>
+                <td>
+                  <input type="checkbox" name="hobiler" id="futbolhobi" />
+                  <label for="futbolhobi"> Futbol</label><br />
+                  <input type="checkbox" name="hobiler" id="voleyhobi" />
+                  <label for="voleyhobi"> Voleybol</label><br />
+                  <input type="checkbox" name="hobiler" id="baskethobi" />
+                  <label for="baskethobi"> Basketbol</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="profil">Profil <br />Fotografı</label>
+                </td>
+                <td>
+                  <input type="file" name="profil" id="profil" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="dogum"
+                    >Dogum <br />
+                    Tarihi</label
+                  >
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    name="dogum"
+                    id="dogum"
+                    required
+                    min="1900-01-01"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="adres">Adres</label></td>
+                <td>
+                  <textarea
+                    name="adres"
+                    id="adres"
+                    cols="30"
+                    rows="3"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <button type="submit">Kayıt ol</button>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
