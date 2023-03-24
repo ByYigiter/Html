@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/kayıt" method="get">
+      <input type="text" name="firstName" /><br />
+      <input type="number" name="salary" /><br />
+      <input type="email" name="email" /><br />
+
+      <input type="password" name="pass" /><br />
+      <input type="search" /><br />
+      <input type="url" /><br />
+      <input type="tel" />
+      <!-- userin ekranda gormesini istemediğimiz zmaan kullanlır -->
+      <input type="hidden" /><br />
+      <input type="color" />
+      <!-- button kullnımı ayarlamarı bize birakır -->
+
+      <input type="checkbox" name="user" id="usr" />
+      <label for="usr">Kullanıcı sözleşmesini okudum</label> <br />
+
+      <input type="radio" name="gender" id="erkek" checked /><label for="erkek"
+        >Male</label
+      >
+      <input type="radio" name="gender" id="kadın" /><label for="kadın"
+        >Female</label
+      ><br />
+      <!-- radio ce checkbox da default secili olması için checked -->
+      <!-- radiolarda name kısmı eşit olmali sadece 1 secilebilsin -->
+
+      <input type="file" name="avatar" /><br />
+
+      <input type="button" value="Kaydet" />
+      <input type="submit" value="save" />
+      <input type="reset" value="reset" />
+
+      <input type="range" name="salary" />
+
+      <input type="date" name="birthDay" /><br />
+      <input type="time" name="hour" /><br />
+
+      <input type="datetime-local" name="now" /><br />
+      <input type="month" name="mn" />
+      <input type="week" name="week" /><br />
+
+      <select name="city" id="">
+        <option value="" disabled selected>Seçiniz</option>
+        <option value="">İstanbul</option>
+        <option value="">Ankara</option>
+        <option value="">İzmir</option>
+        <!-- value backend e gidecek deger oluyor kullanmazsak istanbul gider -->
+      </select>
+
+      <select name="country" size="4" multiple>
+        <option value="">Turkiye</option>
+        <option value="">Germany</option>
+        <option value="">France</option>
+        <br />
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br />
+      </select>
+    </form>
+  </body>
+</html>
