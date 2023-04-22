@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>MY RESUME</h1>
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                      <td><label for="adi">Adı</label></td>
+                      <td><input type="text" name="" id="" /></td>
+                    </tr>
+                    <tr>
+                      <td><label for="soyadi">Soyadı</label></td>
+                      <td><input type="text" name="" id="" /></td>
+                    </tr>
+                    <tr>
+                      <td>Cinsiyet</td>
+                      <td>
+                        <input type="radio" name="gender" id="erkek" />
+                        <label for="erkek">Erkek</label>
+                        <input type="radio" name="gender" id="kadin" />
+                        <label for="kadin">Kadın</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="dogumyeri">Dogum Yeri</label></td>
+                      <td>
+                        <select name="dogum" id="dogumyeri">
+                          <option value="" selected disabled>Seçiniz</option>
+                          <option value="34">istanbul</option>
+                          <option value="06">ankara</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="email">E-Mail</label></td>
+                      <td>
+                        <input
+                          type="email"
+                          name="mail"
+                          id="email"
+                          placeholder="info@mail.com"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="linkedin">LinkedIn</label></td>
+                      <td><input type="email" name="mail" id="linkedin" /></td>
+                    </tr>
+                    <tr>
+                      <td><label for="tel">Tel</label></td>
+                      <td>
+                        <input type="tel" id="tel" placeholder="0 555 255 25 25" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="button" value="Gonder" /></td>
+                    </tr>
+                  </table>
+            </td>
+
+            <td>
+                <table>
+                  <tr>
+                    <td>Hobiler</td>
+                    <td>
+                      <input type="checkbox" name="hobiler" id="futbolhobi" />
+                      <label for="futbolhobi"> Futbol</label><br />
+                      <input type="checkbox" name="hobiler" id="voleyhobi" />
+                      <label for="voleyhobi"> Voleybol</label><br />
+                      <input type="checkbox" name="hobiler" id="baskethobi" />
+                      <label for="baskethobi"> Basketbol</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="profil">Profil <br />Fotografı</label>
+                    </td>
+                    <td>
+                      <input type="file" name="profil" id="profil" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="dogum"
+                        >Dogum <br />
+                        Tarihi</label
+                      >
+                    </td>
+                    <td>
+                      <input
+                        type="date"
+                        name="dogum"
+                        id="dogum"
+                        required
+                        min="1900-01-01"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="adres">Adres</label></td>
+                    <td>
+                      <textarea
+                        name="adres"
+                        id="adres"
+                        cols="30"
+                        rows="3"
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <button type="submit">Kayıt ol</button>
+                    </td>
+                  </tr>
+                </table>
+              </td>        
+
+        </tr>
+    </table>
+
+
+
+  </body>
+</html>
